@@ -1,0 +1,175 @@
+<html>
+<style>
+body {
+	background:
+		radial-gradient(black 15%, transparent 16%) 0 0,
+		radial-gradient(black 15%, transparent 16%) 8px 8px,
+		radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+		radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+	background-color:#282828;
+}
+.grid_global {
+	box-sizing: border-box;
+	grid-gap: 1em;
+	grid-template-columns: 25% 75%;
+}
+#navbar {
+	width: 25%;
+	float: left;
+	line-height: 250%;
+        background: rgb(250,250,0);
+}
+#main-doc {
+	width: 75%;
+	float: right;
+	background: rgb(180,200,250);
+	line-height: 200%;
+}
+@media only screen and (max-width: 600px) {
+	body {
+		background-color: lightblue;
+	}
+}
+code {
+	background: yellow;
+}
+header {
+	text-align: center;
+	text-size: 25px;
+	font-weight: bold;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 24%;
+	background-color: rgb(200,150,100); 
+	height: 100%;
+	position: fixed;
+	overflow: auto;
+}
+li a {
+	display: block;
+	color: #000;
+	text-align: center;
+}
+li a:hover {
+	background-color: #555;
+	color: white;
+}
+.main-section {
+	margin: 35px;	
+}
+</style>
+<body>
+<div>
+	<div class="grid_global">
+		<nav id="navbar">
+		<ul>
+			<li><header>Menu</header></li>
+			<li><a href="#Program" class="nav-link">Program</a></li>
+			<li><a href="#Statements" class="nav-link">Statements</a></li>
+			<li><a href="#Data" class="nav-link">Data</a></li>
+			<li><a href="#Applications" class="nav-link">Applications</a></li>
+			<li><a href="#Conclusion" class="nav-link">Conclusion</a></li>
+		</ul>
+		</nav>
+
+		<main id="main-doc">
+			<section class="main-section" id="Program">
+				<header>Program</header>
+				<a name="Program"></a>
+				<p>Learning to code in Python is easier and more useful than learning to write in English.
+				In fact you can write programs in the Python language that requires less
+				syntax than other programming languages. A lot humans like to beat
+				around the bush when it comes to programming by using complex programming
+				environments such as IDLE, ATOM, Eclipse, etc. However, the easiest way to use
+				Python is using a text editor (GNU Nano for Linux, or NotePad for Windows), 
+			 	just make sure to save your file with the extension .py which is standard 
+				for Python files. For example, we can write a program called example.py,
+				and then we run it in the command line by entering the command 
+				<code>python example.py</code></p>
+				<p>The simplest Python program that you can write is with a simple print 
+				statement. <code>print(thing)</code> where the command <code>print</code> 
+				will tell
+				the computer to print to the screen the value of the variable 
+				<code>'thing'</code>.</p>
+				<li>example code:</li>
+				<code>print(thing)</code>
+			</section>
+			<section class="main-section" id="Statements">
+				<header>Statements</header>
+				<a name="Statements"></a>
+				<p>Statements are the workhorse of Python. They allow your program to
+				make decisions based on logic. For example if you wanted to make a 
+				program that triggered an alarm if a door was opened without using a
+				key then you can do this easily using an 'if' statement: 
+				<code>if (door open) and (no key used):</code> trigger alarm.</p>
+				<p>If you had a program that required the use of the same logic statements
+				several times then you can put those statements in a function. A function in
+				Python is a set of operations that can be used by typing the function name. 
+				In Python we define a function using the syntax: <code>def function():</code></p>
+				<li>example code</li>
+				<code>def function():</code>
+			</section>
+			<section class="main-section" id="Data">
+				<header>Data</header>
+				<a name="Data"></a>
+				<p>Some basic ideas in data for Python are: variables, lists, tuples, and 
+				dictionaries. A variable is a string of characters that holds a value. For
+				example, <code>dollar = 100 * penny</code> the variable <code>dollar</code>
+				holds the value of 100 pennies. A variable can be any string of characters
+				like dollar, however, you can't start a variable with a special character
+				such as * or /, nor can you start a variable with an integer such as 2 or 8.</p>
+				<p>Perhaps the most widely used data structure is the list which is a set of 
+				items of the same type, such as <code>[1,3,89,29]</code> or 
+				<code>[soda, coffee, water]</code>. In this case, the lists holds integers and 
+				strings. tuples are a special type of list because a tuple is a list, but the 
+				items in this list is another list which holds 2 items only. An example of a 
+				tuple is <code>[[soda,1.25],[water,0.99],[coffee,3.25]]</code> which is a list 
+				of items that are lists with 2 items each.</p>
+				<p>A dictionary is a data structure that is similar to a list because it holds
+				items, and it is similar to a tuple because each item is a set of 2 things. These
+				'things' are called a key and a value. In python you use dictionaries just as you 
+				would use a word dictionary, in order to find the a definition (value) you need
+				to know what word (key) to find. Python keeps a dictionary as an unordered set of 
+				'key:value' pairs. you define a dictionary as simple as 
+				<code>my_dictionary = {}</code> this statement creates an variable 
+				<code>my_dictionary</code> that holds an empty dictionary.</p>
+				<li>example code</li>
+			</section>
+			<section class="main-section" id="Applications">
+				<a name="Applications"></a>
+				<header>Applications</header>
+				<p>Some of the many things that you can use Python programs for include:
+				prototyping, back-end web development, data anaylsis, databases, android
+				applications, and even microcontrollers (microPython)</p>
+				<p>Another big application for Python is machine learning. This is especially
+				true in the field of deep-learning which is why many languages like Keras and 
+				Tensorflow have sprung up. The field of machine learning is dominated by Python
+				which is also closely tied to the field of data science.</p>
+				<li>example code</li>
+				<code>for x in file:</code>
+			</section>
+			<section class="main-section" id="Conclusion">
+				<header>Conclusion</header>
+				<a name="Conclusion"></a>
+				<p>The big reason why people should be programming, even if you are not a 
+				programmer by profession is because coding can help you solve problems that 
+				encounter in your daily life. An example is creating a Python dictionary that
+				holds inventory of the food supply in your home, you can make a catalog the most
+				used items in your kitchen and record how much of those items you have. Then as 
+				you use them you subtract the quantity used from the previous amount and then you
+				can make a program that uses logic statements to decide if you need to buy more 
+				of a product the next time you go shopping.</p>
+				<p>In conclusion, every person on the planet should know how to program in Python
+				because it offers a lot of control of your computer and allows people who use it 
+				the curiosity to explore more applications and uses for Python.</p>
+				<li>example code</li>
+				<code>while True:</code>
+			</section>
+		</main>
+	</div>
+</div>
+</body>
+</html>
